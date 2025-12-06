@@ -1,0 +1,12 @@
+{
+  "name": "@paulhalleux/meal-planner-root",
+  "private": true,
+  "description": "An application to plan meals, generate shopping lists and more.",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@changesets/cli": "^2.29.8"
+  },
+  "packageManager": "yarn@1.22.22"
+}

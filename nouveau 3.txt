@@ -1,0 +1,5 @@
+- List of ingredents (Initially scrap them from a public API)
+	- Should be able to define custom unit for an ingredient (yellow/white egg for examples)
+- Recipe defines the rest of ingredents (0.5 tomato, egg, ...)
+	- We can suggest recipes that will use them
+- Import recipes from other services

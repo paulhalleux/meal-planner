@@ -1,0 +1,64 @@
+{
+    "schemes": [],
+    "swagger": "2.0",
+    "info": {
+        "description": "Meal Planner is an API service for planning meals and managing recipes.",
+        "title": "Meal Planner API",
+        "contact": {},
+        "version": "1.0.0"
+    },
+    "host": "localhost:8001",
+    "basePath": "/api",
+    "paths": {
+        "/allergens": {
+            "get": {
+                "description": "Retrieves a list of all allergens",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Allergens"
+                ],
+                "summary": "Get all allergens",
+                "operationId": "GetAllAllergens",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/AllergenResponse"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/gin.H"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "AllergenResponse": {
+            "type": "object",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            }
+        },
+        "gin.H": {
+            "type": "object",
+            "additionalProperties": {}
+        }
+    }
+}

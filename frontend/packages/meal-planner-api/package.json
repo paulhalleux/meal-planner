@@ -1,0 +1,19 @@
+{
+  "name": "@paulhalleux/meal-planner-api",
+  "version": "1.0.0",
+  "description": "API for the Meal Planner application",
+  "author": "Paul HALLEUX",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "generate": "start generate.sh"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
