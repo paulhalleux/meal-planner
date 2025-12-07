@@ -1,4 +1,8 @@
 import { definePreview } from "@storybook/react-vite";
+// @ts-ignore
+import "./preview.css";
+// @ts-ignore
+import "../src/index.css";
 
 export default definePreview({
   addons: [],
@@ -10,7 +14,7 @@ export default definePreview({
       options: {
         dark: {
           name: "Dark",
-          value: "#1b1c1d",
+          value: "#24262b",
         },
       },
     },

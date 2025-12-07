@@ -1,0 +1,55 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  min-width: 0;
+  min-height: 0;
+}
+
+body {
+  font-size: 14px;
+  color: var(--color-text-default);
+}
+
+:root {
+  --color-gray-50: #F1F2F3;
+  --color-gray-100: #D8DADE;
+  --color-gray-200: #C0C2C9;
+  --color-gray-300: #A7ABB4;
+  --color-gray-400: #8E939F;
+  --color-gray-500: #757B8A;
+  --color-gray-600: #606571;
+  --color-gray-700: #4B4F58;
+  --color-gray-800: #36393F;
+  --color-gray-900: #27292E;
+  --color-gray-950: #24262b;
+
+  --color-blue-50: #E6EDFF;
+  --color-blue-100: #B8CCFF;
+  --color-blue-200: #8AABFF;
+  --color-blue-300: #6B95FF;
+  --color-blue-400: #2E69FF;
+  --color-blue-500: #0048FF;
+  --color-blue-600: #003BD1;
+  --color-blue-700: #002EA3;
+  --color-blue-800: #002175;
+  --color-blue-900: #001447;
+  --color-blue-950: #00071A;
+
+  --color-bg-default: var(--color-gray-950);
+  --color-bg-surface: var(--color-gray-900);
+  --color-bg-hover: var(--color-gray-800);
+
+  --color-text-default: var(--color-gray-50);
+  --color-text-secondary: var(--color-gray-400);
+
+  --color-border-default: var(--color-gray-800);
+  --color-border-active: var(--color-blue-500);
+
+  --border-radius-base: 4px;
+
+  --shadow-elevation-base: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
