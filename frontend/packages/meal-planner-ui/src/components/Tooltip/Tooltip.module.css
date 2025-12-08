@@ -1,5 +1,5 @@
 .tooltip {
-  height: 28px;
+  height: var(--component-size-md);
   padding: 0 8px;
   background-color: var(--color-bg-surface);
   border: 1px solid var(--color-border-default);

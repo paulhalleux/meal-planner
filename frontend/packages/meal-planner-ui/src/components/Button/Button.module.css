@@ -1,0 +1,53 @@
+.button {
+  --button-size-sm: var(--component-size-sm);
+  --button-size-md: var(--component-size-md);
+  --button-size-lg: var(--component-size-lg);
+
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--color-text-default);
+  border-radius: var(--border-radius-base);
+  font-size: var(--font-size-sm);
+
+  &.size--sm {
+    height: var(--button-size-sm);
+    padding: 0 var(--padding-sm);
+  }
+
+  &.size--md {
+    height: var(--button-size-md);
+    padding: 0 var(--padding-md);
+  }
+
+  &.size--lg {
+    height: var(--button-size-lg);
+    padding: 0 var(--padding-lg);
+  }
+
+  &.variant--default {
+    background-color: var(--color-bg-surface);
+    border-color: var(--color-border-default);
+
+    &:hover {
+      background-color: var(--color-bg-hover);
+    }
+  }
+
+  &.variant--ghost {
+    background-color: transparent;
+    border-color: transparent;
+
+    &:hover {
+      background-color: var(--color-bg-hover);
+    }
+  }
+}
+
+.button__icon {
+  aspect-ratio: 1 / 1;
+  padding: 0 !important;
+}

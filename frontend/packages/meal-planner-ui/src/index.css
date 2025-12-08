@@ -24,6 +24,7 @@ body {
   --color-gray-600: #606571;
   --color-gray-700: #4B4F58;
   --color-gray-800: #36393F;
+  --color-gray-850: #2E3136;
   --color-gray-900: #27292E;
   --color-gray-950: #24262b;
 
@@ -41,7 +42,7 @@ body {
 
   --color-bg-default: var(--color-gray-950);
   --color-bg-surface: var(--color-gray-900);
-  --color-bg-hover: var(--color-gray-800);
+  --color-bg-hover: var(--color-gray-850);
 
   --color-text-default: var(--color-gray-50);
   --color-text-secondary: var(--color-gray-400);
@@ -49,6 +50,19 @@ body {
   --color-border-default: var(--color-gray-800);
   --color-border-active: var(--color-blue-500);
 
+  --font-size-sm: 12px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+
+  --component-size-sm: 24px;
+  --component-size-md: 28px;
+  --component-size-lg: 32px;
+
+  --padding-sm: 6px;
+  --padding-md: 8px;
+  --padding-lg: 10px;
+
+  --border-radius-sm: 2px;
   --border-radius-base: 4px;
 
   --shadow-elevation-base: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);

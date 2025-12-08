@@ -3,7 +3,7 @@ import { clsx } from "clsx";
 
 import styles from "./Sidebar.module.css";
 import { SidebarGroupProvider } from "./SidebarGroupProvider.tsx";
-import { DynamicIcon } from "lucide-react/dynamic";
+import { Button } from "../Button";
 
 type SidebarGroupToggleProps = Omit<React.ComponentProps<"button">, "children">;
 
@@ -14,16 +14,12 @@ export const SidebarGroupToggle: React.FC<SidebarGroupToggleProps> = ({
   const { expanded, setExpanded } = SidebarGroupProvider.useContext();
 
   return (
-    <button
-      type="button"
+    <Button.Icon
       className={clsx(styles.sidebar__group_toggle, className)}
-      onClick={() => {
-        console.log("toggling sidebar group", !expanded);
-        setExpanded(!expanded);
-      }}
+      onClick={() => setExpanded(!expanded)}
+      size="sm"
       {...rest}
-    >
-      <DynamicIcon name={expanded ? "chevron-up" : "chevron-down"} size={16} />
-    </button>
+      icon={expanded ? "chevron-up" : "chevron-down"}
+    />
   );
 };

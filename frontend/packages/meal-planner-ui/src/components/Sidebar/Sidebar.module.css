@@ -145,7 +145,7 @@
 }
 
 .sidebar__item {
-  height: 28px;
+  height: var(--component-size-md);
   display: flex;
   align-items: center;
   gap: calc(var(--sidebar-padding) / 2);
